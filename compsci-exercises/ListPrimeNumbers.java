@@ -12,11 +12,11 @@ public class ListPrimeNumbers {
 			boolean isPrime = true; // Test if the current number is prime. Prevent default falseyness
 
 			// Test for primality
-			for (int divisor = 2; divisor <= number / 2 && isPrime; divisor++) {
-				// If number mod divisor is 0, number is not prime
-				if (number % divisor == 0) {
-					// Set isPrime to false when number mod divisor has a remainder
-					isPrime = false;
+			// If a number is divisible by a number between 2 and number /2, then it is not prime
+			for (int divisor = 2; divisor <= number / 2; divisor++) {
+				if (number % divisor = 0) { // If true, the number is not prime
+					isPrime = false; // Only set prime numbers to isPrime = false
+					break; // Exit the forloop
 				}
 			}
 
