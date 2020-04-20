@@ -26,11 +26,11 @@ public class ListPrimeNumbers {
 
 				if (count % NUMBER_OF_PRIMES_PER_LINE == 0) {
 					// Display the prime number and advance to the new line
-					System.out.println(number);
+					System.out.printf("%5d\n", number);
 				}
 				else
 					// If we haven't reached the _PER_LINE maximum, display the prime number in-line
-					System.out.print(number + " ");
+					System.out.printf("%5d", number);
 			}
 
 			// Iterate to the next number to check for primality
