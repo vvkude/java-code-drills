@@ -14,7 +14,7 @@ public class ListPrimeNumbers {
 			// Test for primality
 			// If a number is divisible by a number between 2 and number /2, then it is not prime
 			for (int divisor = 2; divisor <= number / 2; divisor++) {
-				if (number % divisor = 0) { // If true, the number is not prime
+				if (number % divisor == 0) { // If true, the number is not prime
 					isPrime = false; // Only set prime numbers to isPrime = false
 					break; // Exit the forloop
 				}
