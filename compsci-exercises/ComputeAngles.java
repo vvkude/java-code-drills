@@ -1,5 +1,7 @@
 // Assignment: Compute the angles of a triangle given user input for the points
 
+import java.util.Scanner;
+
 public class ComputeAngles {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
