@@ -2,14 +2,16 @@
 
 public class ComputeAngles {
 	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
 
 		// TODO change this to prompt the user for three points
-		double x1 = 23.23;
-		double y1 = 12.12;
-		double x2 = 54.24;
-		double y2 = 56.56;
-		double x3 = 78.00;
-		double y3 = 102.12;
+		System.out.print("Enter three points: ");
+		double x1 = input.nextDouble();
+		double y1 = input.nextDouble();
+		double x2 = input.nextDouble();
+		double y2 = input.nextDouble();
+		double x3 = input.nextDouble();
+		double y3 = input.nextDouble();
 
 		// TODO should use Triangle Inequality Theorem to check that the sum of any 2
 		// sides of a triangle must be greater than the measure of the third side
