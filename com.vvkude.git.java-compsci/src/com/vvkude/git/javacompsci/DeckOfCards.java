@@ -22,9 +22,25 @@ public class DeckOfCards {
 			deck[i] = i;
 		}
 		
+		// TODO Remove this testing stub
+		for (int i = 0; i < deck.length; i++) 
+			System.out.print(deck[i]);
+		
 		// TODO Randomly shuffle the deck of cards
+		for (int i = 0; i < deck.length; i++) {
+			int index = (int)(Math.random() * deck.length);
+			int temp = deck[i];
+			deck[i] = deck[index];
+			deck[index] = temp;
+		}
 		
 		// TODO Display the first four cards to the user
+		for (int i = 0; i < 4; i++) {
+			String suit = suits[deck[i] / 13];
+			String rank = ranks[deck[i] % 13];
+			System.out.println("Card number " + deck[i] + ": "
+					+ rank + " of " + suit);
+		}
 		
 		// TODO Remove this testing stub
 		for (int i = 0; i < deck.length; i++) 
