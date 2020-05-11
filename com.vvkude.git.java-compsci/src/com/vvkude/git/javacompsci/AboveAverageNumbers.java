@@ -24,9 +24,9 @@ public class AboveAverageNumbers {
 		
 		// Calculate the sum of the user's input
 		System.out.print("Enter the numbers separated by a space: ");
-		for (double e: numbers) {
-			e = input.nextDouble();
-			sum += e;
+		for (int i = 0; i < n; i++) {
+			numbers[i] = input.nextDouble();
+			sum += numbers[i];
 		}
 		
 		// Calculate the average of the user's input
@@ -34,18 +34,14 @@ public class AboveAverageNumbers {
 		
 		// Compare array elements against the average and increment a count variable
 		int count = 0; // The number of items above the average
-		for (double e: numbers) {
-			if (e > average)
+		for (int i = 0; i < n; i++)
+			if (numbers[i] > average)
 				count++;
-		}
 		
 		// Display the results back to the user
-		
-		// TEST STUB
 		System.out.println("The sum is " + sum);
 		System.out.println("The average is " + average);
 		System.out.println("The number of items above the average is " + count);
 
 	}
-
 }
