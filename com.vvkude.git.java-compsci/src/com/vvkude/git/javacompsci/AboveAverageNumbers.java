@@ -30,13 +30,21 @@ public class AboveAverageNumbers {
 		}
 		
 		// Calculate the average of the user's input
+		double average = sum / n;
 		
 		// Compare array elements against the average and increment a count variable
+		int count = 0; // The number of items above the average
+		for (double e: numbers) {
+			if (e > average)
+				count++;
+		}
 		
 		// Display the results back to the user
 		
 		// TEST STUB
-		System.out.print(sum);
+		System.out.println("The sum is " + sum);
+		System.out.println("The average is " + average);
+		System.out.println("The number of items above the average is " + count);
 
 	}
 
