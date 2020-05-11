@@ -15,16 +15,11 @@ public class DeckOfCards {
 		int[] deck = new int[52];
 		String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
 		String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", 
-				"10", "Jacks", "Queens", "Kings"};
+				"10", "Jack", "Queen", "King"};
 		
 		// TODO Assign values to all the cards in the deck
-		for (int i = 0; i < deck.length; i++) {
+		for (int i = 0; i < deck.length; i++)
 			deck[i] = i;
-		}
-		
-		// TODO Remove this testing stub
-		for (int i = 0; i < deck.length; i++) 
-			System.out.print(deck[i]);
 		
 		// TODO Randomly shuffle the deck of cards
 		for (int i = 0; i < deck.length; i++) {
@@ -41,10 +36,6 @@ public class DeckOfCards {
 			System.out.println("Card number " + deck[i] + ": "
 					+ rank + " of " + suit);
 		}
-		
-		// TODO Remove this testing stub
-		for (int i = 0; i < deck.length; i++) 
-			System.out.print(deck[i]);
 
 	}
 
