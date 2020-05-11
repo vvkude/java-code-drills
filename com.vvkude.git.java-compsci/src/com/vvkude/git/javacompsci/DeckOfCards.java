@@ -11,17 +11,24 @@ package com.vvkude.git.javacompsci;
 public class DeckOfCards {
 
 	public static void main(String[] args) {
-		// TODO Create an array of 52 elements for the deck
-		
-		// TODO Create an array of strings for suits
-		
-		// TODO Create an array of strings for ranks
+		// Create arrays for the deck, suits and ranks
+		int[] deck = new int[52];
+		String[] suits = {"Spades", "Hearts", "Diamonds", "Clubs"};
+		String[] ranks = {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", 
+				"10", "Jacks", "Queens", "Kings"};
 		
 		// TODO Assign values to all the cards in the deck
+		for (int i = 0; i < deck.length; i++) {
+			deck[i] = i;
+		}
 		
 		// TODO Randomly shuffle the deck of cards
 		
 		// TODO Display the first four cards to the user
+		
+		// TODO Remove this testing stub
+		for (int i = 0; i < deck.length; i++) 
+			System.out.print(deck[i]);
 
 	}
 
