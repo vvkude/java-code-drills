@@ -6,8 +6,8 @@ public class RandomArrayShuffle {
 		double[] myArray = {1.0, 2.0, 3.0, 4.0, 5.0};
 		
 		// Display the initial array
-		for (int i = 0; i < myArray.length; i++) {
-			System.out.println(myArray[i] + " ");
+		for (double e: myArray) {
+			System.out.println(e);
 		}
 		
 		double temp = myArray[0]; // to hold the first array element
@@ -21,8 +21,8 @@ public class RandomArrayShuffle {
 		myArray[myArray.length - 1] = temp;
 		
 		// Display the new array
-		for (int i = 0; i < myArray.length; i++) {
-			System.out.println(myArray[i] + " ");
+		for (double e: myArray) {
+			System.out.println(e);
 		}
 
 	}
